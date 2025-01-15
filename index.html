@@ -1,0 +1,80 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brigadeiros Gourmet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <svg width="50" height="50" viewBox="0 0 50 50">
+        <circle cx="25" cy="25" r="20" fill="#4A2B0F"/>
+        <circle cx="25" cy="25" r="15" fill="#2C1810"/>
+        <circle cx="20" cy="20" r="3" fill="#fff" opacity="0.5"/>
+      </svg>
+      <h1>Brigadeiros Gourmet</h1>
+    </div>
+  </header>
+
+  <main>
+    <h2>Nossos Sabores</h2>
+    
+    <div class="menu-grid">
+      <div class="menu-column">
+        <div class="brigadeiro">Tradicional</div>
+        <div class="brigadeiro">Ninho</div>
+        <div class="brigadeiro">Nutella</div>
+        <div class="brigadeiro">Maracujá</div>
+        <div class="brigadeiro">Pistache</div>
+      </div>
+      
+      <div class="menu-column">
+        <div class="brigadeiro">Oreo</div>
+        <div class="brigadeiro">Paçoca</div>
+        <div class="brigadeiro">Churros</div>
+        <div class="brigadeiro">Café</div>
+        <div class="brigadeiro">Limão</div>
+      </div>
+      
+      <div class="menu-column">
+        <div class="brigadeiro">Morango</div>
+        <div class="brigadeiro">Caramelo</div>
+        <div class="brigadeiro">Coco</div>
+        <div class="brigadeiro">Amendoim</div>
+        <div class="brigadeiro">Ferrero</div>
+      </div>
+      
+      <div class="menu-column">
+        <div class="brigadeiro">Beijinho</div>
+        <div class="brigadeiro">Doce de Leite</div>
+        <div class="brigadeiro">Cookies</div>
+        <div class="brigadeiro">Chocolate Branco</div>
+        <div class="brigadeiro">Dark</div>
+      </div>
+    </div>
+
+    <div class="cta-buttons">
+      <button class="cta-button" onclick="openModal('custom')">Peça já sua caixa customizada!</button>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScUKi130PQEaDloaO_pFtnanR-GH2Lg5_lkneZsIUNMtv_gmQ/viewform?usp=sharing" class="cta-button" target="_blank">Encomende para sua festa!</a>
+    </div>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p class="modal-description">A nossa caixa vem com 5 brigadeiros, escolha quais deles você quer !!</p>
+      <form id="order-form">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu email" required>
+        <input type="tel" placeholder="Seu telefone" required>
+        <textarea placeholder="Digite aqui os 5 sabores que você deseja" rows="4" required></textarea>
+        <button type="submit">Enviar pedido</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
